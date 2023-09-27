@@ -1,3 +1,4 @@
+
 img {
     max-width: 100%;
 }
@@ -40,6 +41,24 @@ main a {
     background-color:rgb(255, 149, 0);
 }
 
+@media (min-width: 600px) {    
+         h1 {
+        font-size: 32px;
+    }
+        
+        .red-text {
+            color:darkorchid;
+        }
+
+        .green-text {
+            color:deeppink;
+        }
+    
+        .highlight-medium-screen {
+            background-color: yellow;
+        }
+    }
+
 @media (min-width: 800px) {
     nav ul {
         flex-direction: row;
@@ -58,11 +77,27 @@ main a {
     .green-text{
         color: green;
     }
+
+    h1 {
+        color: blue;
+    }
 }
 
 @media (min-width: 1000px) {
+    h1 {
+        font-size: 48px;
+    }
+    
     .red-text,
     .green-text {
         color: rgb(20, 25, 170);
+    }
+
+    h1 {
+        color: red;
+    }
+
+    .highlight-large-screen {
+        background-color: lightblue;
     }
 }
