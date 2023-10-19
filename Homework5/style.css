@@ -1,0 +1,22 @@
+img {
+    width: 500px; 
+    height: 300px; /
+}
+
+h2, h3, h4, h5, h6, h7 {
+    font-size: 20px; /* Set the desired font size */
+  }
+
+  h1, h2, h3, h4, h5, h6, h7, img {
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center text content */
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh;
+  }
