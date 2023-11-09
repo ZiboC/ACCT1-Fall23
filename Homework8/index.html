@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Week 8: Interactive Obstacle Avoidance Game</title>
+</head>
+
+<body>
+    <header>
+        <h1>Week 8: Find Your Interface</h1>
+    </header>
+    
+    <main>
+        <section class="game-description">
+            <h2>Game Concept</h2>
+            <p>I want to make an obstacle avoidance game that can interact with the human body. A computer camera is used to recognize a human face, then a movable ball is generated at the position of the nose, and the movement of the ball follows the position of the nose in the screen. Then, obstacles will fall randomly from the top of the canvas, and the player needs to move the ball to avoid the falling obstacles. The game ends when the ball hits an obstacle. During the game there is a timer to keep track of the time, and a difficulty system to adjust the number and speed of the falling balls.</p>
+            <img src="Sketch.PNG" alt="Game Sketch">
+        </section>
+
+        <section class="game-instructions">
+            <article>
+                <h2>Initial Setup</h2>
+                <p>At the very beginning, variables are declared to store the state of the gameanvas and remove it from the balls array if it is.</p>
+                <img src="1.jpeg" alt="Initial Setup">
+            </article>
+
+            <article>
+                <h2>Gameplay Mechanics</h2>
+                <p>Set up the canvas, start the video capture, initialize poseNet with a callback for when it's ready, and hide the video element. Conclude by calling resetGame to start the game with initial settings.</p>
+                <img src="2.jpeg" alt="Gameplay Mechanics">
+            </article>
+
+            <article>
+                <h2>Reset Game Function</h2>
+                <p>Create resetGame function, which sets the game to its starting conditions. It resets the obstacles array, game over flag, timer, score, level, and starts the timer. It also displays the initial game instructions and creates the first set of obstacles.</p>
+                <img src="3.jpeg" alt="Reset Game Function">
+            </article>
+
+            <article>
+                <h2>Obstacle Creation</h2>
+                <p>Obstacle creation function generates a specified number of obstacles with random positions, sizes, and speeds, adding them to the obstacles array.</p>
+                <img src="4.jpeg" alt="Obstacle Creation">
+            </article>
+
+            <article>
+                <h2>Model Loading</h2>
+                <p>Update the on-screen status when the PoseNet model is loaded and ready to use.</p>
+                <img src="5.jpeg" alt="Model Loading">
+            </article>
+
+            <article>
+                <h2>Rendering Game Frame</h2>
+                <p>Create draw function, which is called repeatedly by p5.js and handles the rendering of each frame of the game. It checks if the game is over and either updates and draws the game elements or handles the game over logic.</p>
+                <img src="6.jpeg" alt="Rendering Game Frame">
+            </article>
+
+            <article>
+                <h2>Ball Update</h2>
+                <p>Create ball update function. It updates the position of the ball according to the detected position of the player's nose using the pose data.</p>
+                <img src="7.jpeg" alt="Ball Update">
+            </article>
+
+            <article>
+                <h2>Obstacles Update</h2>
+                <p>Create obstacles update function to maintain the obstacles, updating their positions, checking for collisions, and increasing the score as they pass off the screen.</p>
+                <img src="8.jpeg" alt="Obstacles Update">
+            </article>
+
+            <article>
+                <h2>Game Progression</h2>
+                <p>This function handles the progression of the game through levels based on the elapsed time.</p>
+                <img src="9.jpeg" alt="Game Progression">
+            </article>
+
+            <article>
+                <h2>HUD Display</h2>
+                <p>Create HUD display function to draw the heads-up display, showing the score, time, and current level on the canvas.</p>
+                <img src="10.jpeg" alt="HUD Display">
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://editor.p5js.org/zchen26/sketches/73X_gTrd2" class="play-game-link">Click here to play the game!</a>
+    </footer>
+</body>
+</html>
