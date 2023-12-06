@@ -1,0 +1,57 @@
+/* 通用样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header, main, section, article {
+    margin: 20px;
+    padding: 15px;
+}
+
+/* 标题样式 */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* 主内容区域样式 */
+main {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 每个文章块的样式 */
+article {
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+}
+
+h2 {
+    color: #007bff;
+}
+
+/* 图片样式 */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* 视频样式 */
+iframe {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+}
