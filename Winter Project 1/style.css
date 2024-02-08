@@ -1,0 +1,82 @@
+/* Redesigned style.css */
+:root {
+    --primary-color: #007BFF; /* A bright blue for vibrancy */
+    --accent-color: #FFC107; /* An amber for highlights and buttons */
+    --background-color: #E9ECEF; /* A soft gray for the background */
+    --text-color: #212529; /* Almost black for strong readability */
+    --font-family-header: 'Merriweather', serif; /* A serif font for headers */
+    --font-family-body: 'Roboto', sans-serif; /* A sans-serif font for body text */
+}
+
+body {
+    font-family: var(--font-family-body);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--font-family-header);
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    margin: 20px 0 10px;
+    color: var(--primary-color);
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section.outComes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    section.outComes {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 20px;
+    }
+}
+
+/* Add a subtle hover effect to images */
+img:hover {
+    opacity: 0.9;
+}
