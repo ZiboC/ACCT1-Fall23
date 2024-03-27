@@ -1,0 +1,66 @@
+/* Basic reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+header {
+    background-color: #009688;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    margin-top: 20px;
+}
+
+section.outComes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+article h2 {
+    color: #009688;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+img, iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+iframe {
+    height: 315px; /* Adjust height for a better aspect ratio for videos */
+}
+
+@media screen and (max-width: 768px) {
+    article {
+        margin: 0 10px;
+    }
+}
